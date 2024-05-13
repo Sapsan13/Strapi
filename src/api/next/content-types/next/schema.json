@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nexts",
+  "info": {
+    "singularName": "next",
+    "pluralName": "nexts",
+    "displayName": "Next"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nextjs": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "basic": {
+      "type": "richtext"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "nexts"
+    }
+  }
+}
