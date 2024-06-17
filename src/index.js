@@ -1,4 +1,6 @@
-'use strict';
+"use strict";
+
+console.log("task_1");
 
 module.exports = {
   /**
